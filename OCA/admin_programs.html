@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>OCA Program Configuration</title>
+    </head>
+    <body>
+    <header>
+        <h1>OCA Program Configuration</h1>
+    </header>
+    <nav>
+        <header>Navigation Menu</header>
+        <ul>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="admin.html">Administration</a></li>
+            <ul>
+                <li><a href="admin_users.html">Users</a></li>
+                <li><a href="admin_groups.html">Groups</a></li>
+                <li><a href="admin_programs.html">Configure Program</a></li>
+                <li><a href="admin_programdata.html">Configure Program Data</a></li>
+                <li><a href="admin_programfees.html">Configure Program Fees</a></li>
+                <li><a href="admin_examroster.html">Exam Roster</a></li>
+            </ul>
+        </ul>
+    </nav>
+    <section>
+        <header>Requirements</header>
+        <ul>
+            <li>F-6</li>
+            <li>F-8</li>
+            <li>F-13</li>
+            <li>A-14</li>
+        </ul>
+    </section>
+    <section>
+        <header>Notes</header>
+        <ul>
+            <li>A program is a collection of application information as reprsented by the checkboxes below.</li>
+            <li>Besides identifying the sections of hte program, validation would also be configured here.</li>
+            <li>This is where a program is configured, this is one of the more complicated parts of the app.</li>
+            <li>The Application feature will need to depend on this definition.</li> 
+        </ul>
+    </section>
+    <hr>
+    <section>
+        <ul>
+        <li>
+            <label for="name">Program Name:</label>
+            <input type="text" name="name" />
+            <a href="#">Add Program</a>
+        </li>
+        </ul>    
+    </section>
+    <section>
+        <ul>
+        <li>
+            <label for="program">Select Program:</label>
+            <select name="program">
+                <option value="1">Court Reporters</option>
+                <option value="2">Firms</option>
+                <option value="3">Process Servers</option>
+                <option value="4">Guardians</option>
+                <option value="5">Court Interpreters</option>
+            </select>
+        </li>
+        </ul>    
+    </section>
+    <section>
+        <heading>Program Configuration</heading>
+        <ul>
+            <li>
+                <label for="name">Program Name:</label>
+                <input type="text" name="name" />
+            </li>
+            <li>
+                <label>Application Sections</label>
+                <ul>
+                    <li>
+                        <input type="checkbox" name="asName" />
+                        <label for="asName">Name</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="asAddress" />
+                        <label for="asAddress">Address</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="asExams" />
+                        <label for="asExams">Exams</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="asContEd" />
+                        <label for="asContEd">Cont. Education</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="asCrim" />
+                        <label for="asCrim">Criminal History</label>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+    </body>
+</html>
